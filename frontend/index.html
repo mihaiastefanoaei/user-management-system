@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management System</h1>
+
+    <!-- Form to Create User -->
+    <h2>Create User</h2>
+    <form id="createUserForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="gender" placeholder="Gender" required />
+        <input type="text" id="status" placeholder="Status" required />
+        <button type="button" onclick="createUser()">Create User</button>
+    </form>
+
+    <!-- Form to Fetch All Users -->
+    <h2>Fetch Users</h2>
+    <button onclick="fetchUsers()">Fetch All Users</button>
+    <div id="usersList"></div>
+
+    <!-- Form to Update User -->
+    <h2>Update User</h2>
+    <form id="updateUserForm">
+        <input type="text" id="updateId" placeholder="User ID" required />
+        <input type="text" id="updateName" placeholder="New Name" />
+        <input type="email" id="updateEmail" placeholder="New Email" />
+        <input type="text" id="updateGender" placeholder="New Gender" />
+        <input type="text" id="updateStatus" placeholder="New Status" />
+        <button type="button" onclick="updateUser()">Update User</button>
+    </form>
+
+    <!-- Form to Delete User -->
+    <h2>Delete User</h2>
+    <form id="deleteUserForm">
+        <input type="text" id="deleteId" placeholder="User ID" required />
+        <button type="button" onclick="deleteUser()">Delete User</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
