@@ -7,7 +7,7 @@ COPY package.json .
 
 RUN npm install
 
-CMD [ "npm", "start" ]
+ENTRYPOINT [ "npm", "start" ]
 
 # Stage 1: Build Stage
 FROM node:20-alpine as build
